@@ -1,5 +1,5 @@
 pipeline {
-  agent { docker { image 'alpine3.18' } }
+  agent { docker { image 'alpine:3.18' } }
   stages {
     stage('Prepare Environment') {
             steps {
