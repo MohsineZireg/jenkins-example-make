@@ -1,5 +1,6 @@
 pipeline {
-  agent { docker { image 'alpine:3.18' } }
+  agent { docker { image 'alpine:3.18'
+                   args '-u root' // Run as root user} }
   stages {
     stage('Prepare Environment') {
             steps {
