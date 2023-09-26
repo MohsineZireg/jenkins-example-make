@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent { docker { image 'make-alpine3.18' } }
   stages {
     stage('verify make is installed') {
       steps {
