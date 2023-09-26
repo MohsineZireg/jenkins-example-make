@@ -6,6 +6,7 @@ pipeline {
                 // Install 'make' using the 'apk' package manager
                 sh 'apk update && apk add make'
             }
+    }
     stage('verify make is installed') {
       steps {
         sh 'make --version'
