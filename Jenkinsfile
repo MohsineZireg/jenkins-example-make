@@ -1,5 +1,5 @@
 pipeline {
-  aagent {
+  agent {
         docker {
             image 'alpine:latest'
             args '-u root' // Run as root user
